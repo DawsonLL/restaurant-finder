@@ -76,4 +76,4 @@ def search_business():
 
 if __name__ == '__main__':
 	# Debugger left on to debug program
-	app.run(debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)), debug = True) # MIGHT REMOVE, depending if needed or not
